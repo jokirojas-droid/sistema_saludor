@@ -1,0 +1,106 @@
+Actúa como un desarrollador de software con experiencia en Java y JavaFX, y como un tutor que ayuda a un estudiante universitario a comprender el código que desarrolla.
+
+## 1. Contexto del proyecto
+
+Necesito desarrollar un prototipo de aplicación de escritorio llamado "Sistema Saludador", utilizando Java y JavaFX.
+
+El objetivo es demostrar el funcionamiento básico del sistema mediante el siguiente caso de uso: "Solicitar saludo".
+
+La aplicación debe ser sencilla, funcional, fácil de ejecutar en Windows y apropiada para una demostración académica.
+
+## 2. Restricciones tecnológicas
+
+- Utiliza Java y JavaFX.
+- La aplicación debe ser de escritorio, no una aplicación web.
+- Mantén el proyecto sencillo y evita dependencias innecesarias.
+- Antes de elegir la configuración del proyecto, identifica si ya existe una estructura, un sistema de construcción o una versión de Java configurada.
+- Si el proyecto está vacío, selecciona una configuración sencilla y compatible para JavaFX, preferiblemente utilizando Maven si resulta apropiado.
+- No inventes requisitos adicionales ni implementes funcionalidades que no estén solicitadas.
+
+## 3. Caso de uso: Solicitar saludo
+
+Implementa el siguiente flujo completo:
+
+1. La aplicación inicia mostrando una ventana titulada "Sistema Saludador".
+2. La pantalla inicial incluye un botón llamado "Solicitar saludo".
+3. Cuando el estudiante hace clic en ese botón, aparece un formulario dentro de la misma ventana.
+4. El formulario solicita:
+   - Nombre del estudiante.
+   - Edad del estudiante.
+   - Hora del día mediante un selector con las opciones AM y PM.
+5. El estudiante ingresa los datos y pulsa el botón "Aceptar".
+6. El sistema valida la información.
+7. Si los datos son válidos, muestra un saludo personalizado con el nombre y la edad:
+   - AM: "Buenos días, [nombre]. Tienes [edad] años."
+   - PM: "Buenas tardes, [nombre]. Tienes [edad] años."
+8. Después de mostrar el saludo, debe existir un botón que permita regresar a la pantalla inicial.
+
+## 4. Validaciones
+
+Implementa las siguientes validaciones:
+
+- El nombre no puede estar vacío ni contener únicamente espacios.
+- La edad debe ser un número entero válido y positivo.
+- Debe seleccionarse AM o PM.
+- Si existe un error, muestra un mensaje claro en español y en color rojo.
+- Los errores de validación no deben cerrar la aplicación ni impedir que el usuario corrija los datos.
+- Evita que el programa falle cuando el usuario introduce texto donde se espera un número.
+
+## 5. Interfaz gráfica
+
+Diseña una interfaz limpia, agradable y coherente, apropiada para mostrar a un cliente.
+
+- Utiliza JavaFX para los componentes gráficos.
+- Organiza correctamente los campos, etiquetas, botones y mensajes.
+- Mantén una navegación sencilla entre la pantalla inicial, el formulario y el resultado.
+- Utiliza nombres de botones y mensajes en español.
+- Evita animaciones complejas, efectos innecesarios o funcionalidades que no aporten al caso de uso.
+- Prioriza la claridad, la facilidad de uso y la estabilidad.
+
+## 6. Organización y calidad del código
+
+- Organiza los archivos de forma clara y coherente con el tamaño del proyecto.
+- Utiliza nombres descriptivos para las clases, variables y métodos.
+- Evita duplicar código y no introduzcas patrones de diseño innecesarios.
+- Separa las responsabilidades cuando sea útil, sin complicar artificialmente la solución.
+- Incluye comentarios únicamente cuando ayuden a entender decisiones o partes importantes del código.
+- Gestiona correctamente los errores previsibles.
+- No afirmes que el programa funciona si no has podido verificarlo.
+
+## 7. Entregables obligatorios
+
+Prepara los siguientes elementos dentro del repositorio:
+
+1. **Aplicación funcional:** código fuente completo del Sistema Saludador.
+2. **README.md:** documento en español que explique el objetivo del proyecto, los requisitos previos, la versión de Java utilizada, la configuración de JavaFX y los pasos exactos para ejecutar la aplicación en Windows. Incluye los comandos necesarios según la configuración real del proyecto.
+3. **Carpeta prompts/:** crea la carpeta si no existe y guarda este prompt completo en `prompts/01_proyecto_completo.txt`. Si posteriormente se utilizan otros prompts para modificar el proyecto, deben guardarse consecutivamente en archivos `.txt`, respetando el orden real de uso.
+4. **REFLEXION.md:** crea una plantilla en español para documentar los retos, descubrimientos, sorpresas, comandos o bibliotecas aprendidos y aspectos que no se comprendían al principio. No inventes experiencias personales del estudiante; utiliza preguntas o espacios para completar después de probar y comprender el programa.
+5. **Enlace al repositorio:** si el repositorio remoto ya está configurado, identifica su URL real e inclúyela en el README. Si no existe o no tienes acceso, indica claramente cómo obtener o configurar el enlace, sin inventar una URL.
+
+No publiques el código ni crees repositorios remotos sin autorización.
+
+## 8. Método de trabajo
+
+Antes de modificar archivos:
+
+- Inspecciona el proyecto y sus archivos existentes.
+- Identifica las herramientas y versiones disponibles cuando sea posible.
+- Resume brevemente el plan de implementación y los archivos que necesitas crear o modificar.
+- Si falta algún requisito esencial o existe un conflicto importante, pregunta antes de tomar una decisión que pueda cambiar el alcance.
+
+Después del análisis, implementa la solución completa de forma coherente, evitando cambios ajenos al proyecto.
+
+Al terminar:
+
+- Ejecuta la compilación o las verificaciones disponibles.
+- Corrige los errores que puedas reproducir.
+- Comprueba, en la medida que permitan las herramientas disponibles, los distintos caminos del caso de uso y las validaciones.
+- Indica qué pruebas se ejecutaron, cuáles pasaron y cuáles no pudieron realizarse.
+- Proporciona los comandos exactos para ejecutar el programa en Windows.
+- Resume los archivos creados y modificados.
+- Explica brevemente las clases, los métodos, los eventos de los botones, el manejo de pantallas y las validaciones más importantes.
+- Señala las limitaciones pendientes, si las hay.
+
+La prioridad es entregar una aplicación funcional, sencilla y comprensible que el estudiante pueda explicar y defender ante su profesor.
+
+No agregues funcionalidades fuera del alcance definido.
