@@ -1,3 +1,4 @@
+
 # Sistema Saludador
 
 Prototipo académico de aplicación de escritorio en **Java** y **JavaFX**. Demuestra el caso de uso **Solicitar saludo**: el estudiante abre un formulario, ingresa nombre, edad y periodo del día (AM o PM), y recibe un saludo personalizado si los datos son válidos.
@@ -86,3 +87,6 @@ https://...   ← pegue aquí la URL que muestre `git remote -v`
 - `src/main/resources/estilos.css`: estilos visuales de la interfaz.
 - `prompts/`: historial de prompts utilizados.
 - `REFLEXION.md`: plantilla para documentar el aprendizaje del estudiante.
+=======
+# sistema_saludor
+>>>>>>> origin/main
